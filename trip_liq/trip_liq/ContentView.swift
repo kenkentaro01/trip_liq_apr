@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+//    旅人の名前を参照する変数
+//    var tabibitoList =
+    
     var body: some View {
         NavigationView {
             VStack {
