@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Spacer() // 上部にスペーサーを配置して、中央に寄せる
+                NavigationLink(destination: TripMemberName()) {
+                    Text("旅人追加")
+                        .foregroundColor(.white) // テキストの色を白に設定
+                        .padding() // パディングを追加してタッチしやすくする
+                        .background(Color.orange) // 背景色を青に設定
+                        .cornerRadius(10) // 角を丸くする
+                }
+                Spacer() // 下部にもスペーサーを配置して、中央に寄せる
+            }
+            .navigationTitle("旅先　勘定")
         }
-        .padding()
     }
 }
 
