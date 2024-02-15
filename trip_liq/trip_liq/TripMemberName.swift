@@ -58,7 +58,7 @@ struct TripMemberName: View {
     }
     /// 行削除処理
     func rowRemove(offsets: IndexSet) {
-        fruits.remove(atOffsets: offsets)
+        nameItem.MemberNameList.remove(atOffsets: offsets)
     }
 }
 #Preview {
