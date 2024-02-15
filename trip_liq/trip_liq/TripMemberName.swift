@@ -44,7 +44,7 @@ struct TripMemberName: View {
                     }
                     .padding() // ボタンの周りにパディングを追加
                     
-                    NavigationLink(destination: KanjoView()) {
+                    NavigationLink(destination: KanjoView(nameItem: $nameItem)) {
                         Text("完了")
                             .foregroundColor(.white)
                             .frame(width: 100, height: 40)
