@@ -11,6 +11,10 @@ struct TripMemberName: View {
     @State var inputName = ""
 //    一番制限が強い
     @State private var nameItem = NameItem(addName: "")
+    @State private var overcoutAlert = false // アラート表示のための状態変数
+    @State private var namenullAlert = false
+    @State private var duplicationName = false
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -28,21 +32,26 @@ struct TripMemberName: View {
                     .padding()
                 
                 HStack {
-                    Button(action: {
-                        // ボタンをタップした時のアクション
-                        // 名前を追加してリストを更新
-                        let updatedList = nameItem.addNameList(addName: inputName)
-                        // 入力フィールドをクリア
-                        inputName = ""
-                        print(updatedList)
-                    }) {
-                        Text("さらに追加")
-                            .foregroundColor(.white)
-                            .frame(width: 100, height: 40)
-                            .background(Color.red)
-                            .cornerRadius(10)
+                    Button("さらに追加") {
+                        print(nameItem.MemberNameList)
+                        // リストのサイズをチェックして条件に応じてアラートを表示
+                        if nameItem.MemberNameList.count >= 15 {
+                            overcoutAlert = true // 15人以上ならアラートを表示
+                        } else if inputName == ""{
+                            namenullAlert = true
+                        }else if nameItem.MemberNameList.contains(inputName){
+                            duplicationName = true
+                        }
+                        else {
+                            let updatedList = nameItem.addNameList(addName: inputName)
+                            inputName = "" // 入力フィールドをクリア
+                        }
                     }
-                    .padding() // ボタンの周りにパディングを追加
+                    .foregroundColor(.white)
+                    .frame(width: 100, height: 40)
+                    .background(Color.red)
+                    .cornerRadius(10)
+                    .padding()
                     
                     NavigationLink(destination: KanjoView(nameItem: $nameItem)) {
                         Text("完了")
@@ -53,6 +62,21 @@ struct TripMemberName: View {
                     }
                     .padding() // ナビゲーションリンクの周りにもパディングを追加
                 }
+                .alert("登録人数の上限", isPresented: $overcoutAlert) {
+                               Button("OK", role: .cancel) { }
+                           } message: {
+                               Text("これ以上人数は登録できません。")
+                           }
+               .alert("空の名前", isPresented: $namenullAlert) {
+                              Button("OK", role: .cancel) { }
+                          } message: {
+                              Text("テキストに名前を入力してください")
+                          }
+              .alert("重複する名前の検知", isPresented: $duplicationName) {
+                             Button("OK", role: .cancel) { }
+                         } message: {
+                             Text("重複しない名前を記入してください")
+                         }
             }
         }
     }
