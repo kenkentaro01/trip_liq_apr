@@ -43,7 +43,7 @@ struct TripMemberName: View {
                             duplicationName = true
                         }
                         else {
-                            let updatedList = nameItem.addNameList(addName: inputName)
+                            _ = nameItem.addNameList(addName: inputName)
                             inputName = "" // 入力フィールドをクリア
                         }
                     }
