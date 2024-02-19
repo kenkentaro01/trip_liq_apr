@@ -157,7 +157,7 @@ struct MoneyFillWay: View {
     @Binding var selectedNameTo: String?
     @Binding var inputMoney:Int
     @State private var selectionValue = Warikanway.hitori
-    var seisanItem = SeisanItem()
+    @State private var seisanItem = SeisanItem()
 
     var body: some View {
         VStack {
@@ -173,16 +173,16 @@ struct MoneyFillWay: View {
 
             // 修正: selectionValue.rawValueを直接使用
             Button(action: {
-                print("選択された項目: \(selectedNamesFrom)")
-                print("誰に: \(selectedNameTo ?? "未選択")")
-                print("選択された割り勘方法: \(selectionValue.rawValue)")
-                print("入力された金額: \(inputMoney)")
-                _ = seisanItem.addSeisanList((
-                    selectedNamesFrom: ["Alice", "Bob"],
-                    selectedNameTo: "Charlie",
-                    selectionValue: .warikan, // Warikanway 列挙型のインスタンス
-                    inputMoney: 1500
-                )
+                // Set<String>から[String]への変換
+                 let fromNamesArray = Array(selectedNamesFrom)
+                 // selectedNameToがオプショナルなので、デフォルト値を提供
+                 let toName = selectedNameTo ?? "未選択"
+                 // selectionValue.rawValueは既にStringです
+                _ = selectionValue.rawValue
+                 // inputMoneyはIntなのでそのまま使用
+                 
+                 // SeisanItemのメソッドを呼び出す
+                 seisanItem.addSeisanListElement(selectedNamesFrom: fromNamesArray, selectedNameTo: toName, selectionValue: selectionValue, inputMoney: inputMoney)
               }) {
                   Text("記入")
                       .bold()
