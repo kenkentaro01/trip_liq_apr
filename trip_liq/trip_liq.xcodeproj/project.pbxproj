@@ -40,6 +40,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9601ED612BC4482A00C5EC8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				965F190C2B7A79D4007E53C7 /* ContentView.swift */,
+				965F191A2B7BCEB6007E53C7 /* KanjoView.swift */,
+				965F19182B7A80C7007E53C7 /* TripMemberName.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		965F18FE2B7A79D4007E53C7 = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */,
-				965F190C2B7A79D4007E53C7 /* ContentView.swift */,
-				965F19182B7A80C7007E53C7 /* TripMemberName.swift */,
+				9601ED612BC4482A00C5EC8A /* View */,
 				965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */,
-				965F191A2B7BCEB6007E53C7 /* KanjoView.swift */,
 				965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */,
 				965F190E2B7A79D7007E53C7 /* Assets.xcassets */,
 				965F19102B7A79D7007E53C7 /* Preview Content */,

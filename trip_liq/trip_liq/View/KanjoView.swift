@@ -10,7 +10,8 @@ import SwiftUI
 struct KanjoView: View {
     @Binding var nameItem: NameItem
     @State private var showingModal = false
-
+    @State private var seisanList = SeisanItem()
+    
     var body: some View {
         ZStack {
             Color(.systemBackground)
@@ -30,9 +31,6 @@ struct KanjoView: View {
                                 .background(Color.blue)
                                 .cornerRadius(8)
                             }
-                            .fullScreenCover(isPresented: $showingModal) {
-                                ModalView(nameItem: $nameItem)
-                            }
 //                            .padding(.top, 760) // 上方向に760ポイントのパディングを適用
 //                            .padding(.trailing, 22) // 右側に22ポイントのパディングを適用
 //                    ModalView() // 仮のデータで初期化
@@ -40,7 +38,7 @@ struct KanjoView: View {
 //                            Image(systemName: "pencil")
 //                            Text("入力")
 //                        }
-                seisanTab(nameItem: .constant(NameItem(addName: ""))) // 仮のデータで初期化
+                    seisanTab(seisanList: $seisanList) // 仮のデータで初期化
                     .tabItem {
                         Image(systemName: "list.bullet")
                         Text("清算")
@@ -49,6 +47,9 @@ struct KanjoView: View {
 //                .padding(.top, 690.0)
 //                .padding(.bottom, 1.0)
 
+        }
+        .fullScreenCover(isPresented: $showingModal) { // このfullScreenCoverはZStack内に正しく置く
+            ModalView(nameItem: $nameItem, showingModal: $showingModal, seisanList: $seisanList)
         }
     }
 }
@@ -59,7 +60,7 @@ struct KanjoView: View {
 //                            Image(systemName: "pencil")
 //                            Text("入力")
 //                        }
-//                    
+//
 //                    seisanTab(nameItem: .constant(NameItem(addName: ""))) // 仮のデータで初期化
 //                        .tabItem {
 //                            Image(systemName: "list.bullet")
@@ -75,14 +76,23 @@ struct KanjoView_Previews: PreviewProvider {
 
 
 struct seisanTab: View {
-    @Binding var nameItem: NameItem
+    @Binding var seisanList: SeisanItem // NameItemがSeisanItemを含んでいると仮定
 
     var body: some View {
-        // KanjoViewのビュー構造
-        Text("清算画面")
+        List {
+            ForEach(seisanList.addSeisanList, id: \.self) { item in
+                VStack(alignment: .leading) {
+                    Text("From: \(item["From"] ?? "未定義")")
+                    Text("To: \(item["To"] ?? "未定義")")
+                    Text("Method: \(item["Method"] ?? "未定義")")
+                    Text("Money: \(item["Money"] ?? "0")円")
+                    Text("Payment: \(item["shiharai"] ?? "0")円")
+                }
+                .padding()
+            }
+        }
     }
 }
-
 
 struct ModalView: View {
     let modalHeight: CGFloat = UIScreen.main.bounds.height / 2
@@ -91,6 +101,8 @@ struct ModalView: View {
     @Binding var nameItem: NameItem
     @State private var selectedNamesFrom: Set<String> = [] // 誰から選択されたか
     @State private var selectedNameTo: String? = nil // 誰に選択されたか
+    @Binding var showingModal: Bool
+    @Binding var seisanList: SeisanItem
 
     var body: some View {
         VStack {
@@ -124,7 +136,7 @@ struct ModalView: View {
                     }
 
 
-                MoneyFillWay(selectedNamesFrom: $selectedNamesFrom,selectedNameTo: $selectedNameTo,inputMoney: $inputMoney)
+                MoneyFillWay(selectedNamesFrom: $selectedNamesFrom,selectedNameTo: $selectedNameTo,inputMoney: $inputMoney, showingModal: $showingModal)
 
             }
 
@@ -156,6 +168,7 @@ struct MoneyFillWay: View {
     @Binding var selectedNamesFrom: Set<String>
     @Binding var selectedNameTo: String?
     @Binding var inputMoney:Int
+    @Binding var showingModal: Bool
     @State private var selectionValue = Warikanway.hitori
     @State private var seisanItem = SeisanItem()
 
@@ -183,6 +196,10 @@ struct MoneyFillWay: View {
                  
                  // SeisanItemのメソッドを呼び出す
                  seisanItem.addSeisanListElement(selectedNamesFrom: fromNamesArray, selectedNameTo: toName, selectionValue: selectionValue, inputMoney: inputMoney)
+//                   seisanList.addSeisanListElement(selectedNamesFrom: Array(selectedNamesFrom), selectedNameTo: selectedNameTo, selectionValue: selectionValue, inputMoney: inputMoney)
+                // モーダルビューを閉じる
+                showingModal = false
+
               }) {
                   Text("記入")
                       .bold()

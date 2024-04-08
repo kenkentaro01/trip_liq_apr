@@ -13,7 +13,7 @@ struct SeisanItem {
     var heikin_amount: Int = 0
     var addSeisanList: [[String: String]] = []
 
-    mutating func addSeisanListElement(selectedNamesFrom: [String], selectedNameTo: String?, selectionValue: Warikanway, inputMoney: Int) {
+    mutating func addSeisanListElement(selectedNamesFrom: [String], selectedNameTo: String?, selectionValue: Warikanway, inputMoney: Int) -> [[String : String]] {
         Fromcount = selectedNamesFrom.count
         let averageAmount = warikanCalc(fromCount: Fromcount, inputMoney: inputMoney)
         for name in selectedNamesFrom {
@@ -27,6 +27,7 @@ struct SeisanItem {
             addSeisanList.append(newElement)
         }
         print("現在のaddSeisanList: \(addSeisanList)")
+        return addSeisanList
     }
     
     func warikanCalc(fromCount: Int, inputMoney: Int) -> Int {
