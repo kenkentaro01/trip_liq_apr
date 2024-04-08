@@ -12,7 +12,6 @@
 		965F190F2B7A79D7007E53C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F190E2B7A79D7007E53C7 /* Assets.xcassets */; };
 		965F19122B7A79D7007E53C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F19112B7A79D7007E53C7 /* Preview Assets.xcassets */; };
 		965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F19182B7A80C7007E53C7 /* TripMemberName.swift */; };
-		965F191B2B7BCEB6007E53C7 /* KanjoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F191A2B7BCEB6007E53C7 /* KanjoView.swift */; };
 		965F191D2B7D0255007E53C7 /* TripMemberNameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */; };
 		965F19232B8248D5007E53C7 /* Kanjo_keisan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */; };
 /* End PBXBuildFile section */
@@ -24,7 +23,6 @@
 		965F190E2B7A79D7007E53C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		965F19112B7A79D7007E53C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		965F19182B7A80C7007E53C7 /* TripMemberName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMemberName.swift; sourceTree = "<group>"; };
-		965F191A2B7BCEB6007E53C7 /* KanjoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjoView.swift; sourceTree = "<group>"; };
 		965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMemberNameList.swift; sourceTree = "<group>"; };
 		965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanjo_keisan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,7 +42,6 @@
 			isa = PBXGroup;
 			children = (
 				965F190C2B7A79D4007E53C7 /* ContentView.swift */,
-				965F191A2B7BCEB6007E53C7 /* KanjoView.swift */,
 				965F19182B7A80C7007E53C7 /* TripMemberName.swift */,
 			);
 			path = View;
@@ -157,7 +154,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				965F191B2B7BCEB6007E53C7 /* KanjoView.swift in Sources */,
 				965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */,
 				965F19232B8248D5007E53C7 /* Kanjo_keisan.swift in Sources */,
 				965F190D2B7A79D4007E53C7 /* ContentView.swift in Sources */,
