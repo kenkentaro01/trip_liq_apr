@@ -14,6 +14,9 @@
 		965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F19182B7A80C7007E53C7 /* TripMemberName.swift */; };
 		965F191D2B7D0255007E53C7 /* TripMemberNameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */; };
 		965F19232B8248D5007E53C7 /* Kanjo_keisan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */; };
+		967133472BC586440062362D /* CulculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967133462BC586440062362D /* CulculateView.swift */; };
+		967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */; };
+		9671334B2BC58D1D0062362D /* rireki_inputAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		965F19182B7A80C7007E53C7 /* TripMemberName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMemberName.swift; sourceTree = "<group>"; };
 		965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMemberNameList.swift; sourceTree = "<group>"; };
 		965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanjo_keisan.swift; sourceTree = "<group>"; };
+		967133462BC586440062362D /* CulculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulculateView.swift; sourceTree = "<group>"; };
+		967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tatekae_inputAreaView.swift; sourceTree = "<group>"; };
+		9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rireki_inputAreaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +48,10 @@
 			isa = PBXGroup;
 			children = (
 				965F190C2B7A79D4007E53C7 /* ContentView.swift */,
+				967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */,
+				9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */,
 				965F19182B7A80C7007E53C7 /* TripMemberName.swift */,
+				967133462BC586440062362D /* CulculateView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,10 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */,
 				965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */,
 				965F19232B8248D5007E53C7 /* Kanjo_keisan.swift in Sources */,
 				965F190D2B7A79D4007E53C7 /* ContentView.swift in Sources */,
+				967133472BC586440062362D /* CulculateView.swift in Sources */,
 				965F190B2B7A79D4007E53C7 /* trip_liqApp.swift in Sources */,
+				9671334B2BC58D1D0062362D /* rireki_inputAreaView.swift in Sources */,
 				965F191D2B7D0255007E53C7 /* TripMemberNameList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

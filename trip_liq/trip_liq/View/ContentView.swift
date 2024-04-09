@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showSheet = false
     var body: some View {
     ZStack{
         VStack(spacing:0){
@@ -19,24 +20,9 @@ struct ContentView: View {
                navigationArea
                 ,alignment: .top
             )
-//            inputエリア
-//            inputArea
         }
-        Button(action: {
-            // ボタンがタップされたときのアクション
-            print("半円形のボタンがタップされました")
-        }) {
-            Image(systemName: "plus")
-                .foregroundColor(.white)
-                .font(.system(size: 70))
-                .padding(20)
-                .background(Color.blue)
-                .clipShape(Circle())
-                .shadow(radius: 10)
-                .overlay(Circle().stroke(Color.white, lineWidth: 4)) // オプションでボーダーを追加
-        }
-        .padding(.bottom, 20)
-        .position(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height - 50)
+ // 画面の下部中央に配置
+        calculateButton
     }
                     }
     }
@@ -74,12 +60,12 @@ extension ContentView{
     private var inputArea: some View {
         HStack(spacing: 15) { // タブとボタンの間のスペースを調整
             TabView {
-                Text("入力エリア")
+                Tatekae_inputAreaView()
                     .tabItem {
                         Image(systemName: "pencil")
                         Text("建替")
                     }
-                Text("別の入力エリア")
+                rireki_inputAreaView()
                     .tabItem {
                         Image(systemName: "square.and.pencil")
                         Text("履歴")
@@ -88,20 +74,68 @@ extension ContentView{
         }
     }
 
-        private var navigationArea: some View{
-            HStack{
-                Text("旅 勘")
-                    .font(.title2.bold())
-                //                    横いっぱいに広げるためのspacerを利用する
-                Spacer()
-                HStack(spacing: 16){
+    private var navigationArea: some View {
+        HStack {
+            Text("旅 勘")
+                .font(.title2.bold())
+            // 横いっぱいに広げるためのspacerを利用する
+            Spacer()
+            HStack(spacing: 16) {
+                // 人物追加ボタン
+                Button(action: {
+                    // ここにボタンがタップされたときのアクションを記述
+                    print("人物追加がタップされました")
+                }) {
                     Image(systemName: "person.badge.plus")
+                }
+
+                // 共有ボタン
+                Button(action: {
+                    // ここにボタンがタップされたときのアクションを記述
+                    print("共有がタップされました")
+                }) {
                     Image(systemName: "square.and.arrow.up")
+                }
+
+                // 削除ボタン
+                Button(action: {
+                    // ここにボタンがタップされたときのアクションを記述
+                    print("削除がタップされました")
+                }) {
                     Image(systemName: "minus.circle")
                 }
-                .font(.title2)
             }
-            .padding()
-            .background(.orange.opacity(0.7))
+            .font(.title2)
         }
+        .padding()
+        .background(Color.orange.opacity(0.7))
+    }
+
+    private var calculateButton: some View {
+         Button(action: {
+             showSheet.toggle() // ボタンがタップされたときにshowSheetの値を切り替える
+         }) {
+             VStack {
+                 Text("計算") // プラスアイコンの上に表示するテキスト
+                     .font(.system(size: 24))
+                     .foregroundColor(.white)
+                 Image(systemName: "plus")
+                     .foregroundColor(.white)
+                     .font(.system(size: 40))
+             }
+             .frame(width: 150, height: 190)
+             .background(Color.blue)
+             .clipShape(Ellipse())
+             .shadow(radius: 10)
+             .overlay(Ellipse().stroke(Color.white, lineWidth: 4))
+         }
+         .padding(.bottom, 20)
+         .position(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height - 50) // 画面の下部中央に配置
+         .sheet(isPresented: $showSheet) {
+             // ここにシートとして表示したい内容を配置
+             CulculateView() // 別のビューをシートとして表示
+                 .ignoresSafeArea()
+                 .presentationDetents([.medium, .large])
+         }
+     }
     }
