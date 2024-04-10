@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960EC7422BC6FE3C002F4BEC /* AddmemberAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC7412BC6FE3C002F4BEC /* AddmemberAlertView.swift */; };
 		965F190B2B7A79D4007E53C7 /* trip_liqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */; };
 		965F190D2B7A79D4007E53C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F190C2B7A79D4007E53C7 /* ContentView.swift */; };
 		965F190F2B7A79D7007E53C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F190E2B7A79D7007E53C7 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		960EC7412BC6FE3C002F4BEC /* AddmemberAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddmemberAlertView.swift; sourceTree = "<group>"; };
 		965F19072B7A79D4007E53C7 /* trip_liq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trip_liq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trip_liqApp.swift; sourceTree = "<group>"; };
 		965F190C2B7A79D4007E53C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		960EC7402BC6FD41002F4BEC /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				960EC7412BC6FE3C002F4BEC /* AddmemberAlertView.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
 		965F18FE2B7A79D4007E53C7 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 			children = (
 				965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */,
 				9601ED612BC4482A00C5EC8A /* View */,
+				960EC7402BC6FD41002F4BEC /* AlertView */,
 				965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */,
 				965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */,
 				965F190E2B7A79D7007E53C7 /* Assets.xcassets */,
@@ -166,6 +177,7 @@
 				967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */,
 				965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */,
 				965F19232B8248D5007E53C7 /* Kanjo_keisan.swift in Sources */,
+				960EC7422BC6FE3C002F4BEC /* AddmemberAlertView.swift in Sources */,
 				965F190D2B7A79D4007E53C7 /* ContentView.swift in Sources */,
 				967133472BC586440062362D /* CulculateView.swift in Sources */,
 				965F190B2B7A79D4007E53C7 /* trip_liqApp.swift in Sources */,

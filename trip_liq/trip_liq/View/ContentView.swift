@@ -81,13 +81,8 @@ extension ContentView{
             // 横いっぱいに広げるためのspacerを利用する
             Spacer()
             HStack(spacing: 16) {
-                // 人物追加ボタン
-                Button(action: {
-                    // ここにボタンがタップされたときのアクションを記述
-                    print("人物追加がタップされました")
-                }) {
-                    Image(systemName: "person.badge.plus")
-                }
+                // 旅行する人の追加ボタン
+                AddmemberAlertView()
 
                 // 共有ボタン
                 Button(action: {
