@@ -11,15 +11,33 @@ struct ContentView: View {
     @State var showSheet = false
     var body: some View {
     ZStack{
-        VStack(spacing:0){
-//            メッセージエリア（スクロールする部分）
+        VStack(spacing: 0) {
+            // navigationAreaをVStackの一部として配置
+            navigationArea
 
-//            被せるレイアウトを作成する時に使用する。
+            // 水平方向のスクロールビュー
+//            アイコンエリア
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(0..<10) { _ in
+                        Circle()
+                            .frame(width: 80, height: 80)
+                            .padding(.top)
+                            .foregroundColor(.gray.opacity(0.5))
+                            .overlay(
+                                    Text("N") // ここに入れたい文字
+                                        .font(.title) // フォントサイズ調整
+                                        .foregroundColor(.black)
+                                        .bold()
+                                        .padding(.top)
+                                    // テキストの色
+                                )
+                    }
+                }
+            }
+
+            // inputAreaをさらに下に配置
             inputArea
-            .overlay(
-               navigationArea
-                ,alignment: .top
-            )
         }
  // 画面の下部中央に配置
         calculateButton
@@ -43,7 +61,7 @@ extension ContentView{
                     HStack{
                         //                    メッセージを複製するためのループ処理
                         Circle()
-                            .frame(width: 60,height: 60)
+                            .frame(width: 45,height: 45)
                         Capsule()
                             .frame(height: 60)
                     }
@@ -60,11 +78,11 @@ extension ContentView{
     private var inputArea: some View {
         HStack(spacing: 15) { // タブとボタンの間のスペースを調整
             TabView {
-                Tatekae_inputAreaView()
-                    .tabItem {
-                        Image(systemName: "pencil")
-                        Text("建替")
-                    }
+                    Tatekae_inputAreaView()
+                        .tabItem {
+                            Image(systemName: "pencil")
+                            Text("建替")
+                        }
                 rireki_inputAreaView()
                     .tabItem {
                         Image(systemName: "square.and.pencil")
