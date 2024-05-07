@@ -22,6 +22,7 @@ struct Tatekae_inputAreaView: View {
                         .foregroundColor(.gray.opacity(0.3))
                         .overlay(
                             VStack{
+//                                この中for文処理をするには？
                                 HStack{
                                     Text("永田")
                                         .padding(.top)

@@ -9,36 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     @State var showSheet = false
+//    @StateObject var nameItem = NameItem(addName: "") 
+    @EnvironmentObject var vm:  NameItem
+    
     var body: some View {
     ZStack{
         VStack(spacing: 0) {
             // navigationAreaをVStackの一部として配置
             navigationArea
-
             // 水平方向のスクロールビュー
 //            アイコンエリア
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(0..<10) { _ in
+                    ForEach(vm.MemberNameList, id: \.self) { name in
                         Circle()
                             .frame(width: 80, height: 80)
-                            .padding(.top)
                             .foregroundColor(.gray.opacity(0.5))
                             .overlay(
-                                    Text("N") // ここに入れたい文字
-                                        .font(.title) // フォントサイズ調整
-                                        .foregroundColor(.black)
-                                        .bold()
-                                        .padding(.top)
-                                    // テキストの色
-                                )
+                                Text(String(name.user.prefix(1)))
+                                    .font(.title)
+                                    .foregroundColor(.black)
+                                    .bold()
+                            )
                     }
                 }
             }
-
             // inputAreaをさらに下に配置
             inputArea
         }
+//        AddmemberAlertView(nameItem: nameItem)
  // 画面の下部中央に配置
         calculateButton
     }
@@ -100,7 +99,7 @@ extension ContentView{
             Spacer()
             HStack(spacing: 16) {
                 // 旅行する人の追加ボタン
-                AddmemberAlertView()
+//                AddmemberAlertView()
 
                 // 共有ボタン
                 Button(action: {

@@ -5,7 +5,7 @@
 //  Created by 健太郎 on 2024/02/14.
 //
 
-//import Foundation
+import Foundation
 //
 //struct NameItem{
 //    //    　struct内で「var」宣告したときにmutatingをfuncの前につけなければならない
@@ -22,3 +22,20 @@
 //        }
 //    }
 //}
+class NameItem: ObservableObject {
+    var addName: String
+    @Published var MemberNameList: [tripMember] = []
+    
+    init(addName: String) {
+        self.addName = addName
+    }
+    
+    func addNameList(addName: String){
+        let newMember = tripMember(id: UUID().uuidString, user: addName)
+        MemberNameList.append(newMember)
+    }
+    
+    func rowRemove(at offsets: IndexSet) {
+        MemberNameList.remove(atOffsets: offsets)
+    }
+}

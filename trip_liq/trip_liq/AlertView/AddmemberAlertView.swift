@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct AddmemberAlertView: View {
+    @ObservedObject var nameItem: NameItem
     @State var AlertshowSheet = false
-    @State private var text = ""
+    @State var inputName = ""
+//    @State private var nameItem = NameItem(addName: "")
+    
     var body: some View {
         Button(action: {
             // ここにボタンがタップされたときのアクションを記述
@@ -19,13 +22,17 @@ struct AddmemberAlertView: View {
             Image(systemName: "person.badge.plus")
         }
         .alert("旅人",isPresented: $AlertshowSheet){
-            TextField("名前を記入してください",text: $text)
+            TextField("名前を記入してください",text: $inputName)
             Button("戻る",role: .cancel){}
-            Button("入力"){}
+            Button("入力"){
+                print(nameItem.MemberNameList)
+                nameItem.addNameList(addName: inputName)
+               inputName = ""  //入力フィールドをクリア}
+            }
         }
     }
 }
 
-#Preview {
-    AddmemberAlertView()
-}
+//#Preview {
+//    AddmemberAlertView()
+//}
