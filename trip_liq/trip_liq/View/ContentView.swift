@@ -16,7 +16,7 @@ struct ContentView: View {
     ZStack{
         VStack(spacing: 0) {
             // navigationAreaをVStackの一部として配置
-            navigationArea
+//            navigationArea
             // 水平方向のスクロールビュー
 //            アイコンエリア
             ScrollView(.horizontal, showsIndicators: false) {
@@ -35,7 +35,7 @@ struct ContentView: View {
                 }
             }
             // inputAreaをさらに下に配置
-            inputArea
+//            inputArea
         }
 //        AddmemberAlertView(nameItem: nameItem)
  // 画面の下部中央に配置

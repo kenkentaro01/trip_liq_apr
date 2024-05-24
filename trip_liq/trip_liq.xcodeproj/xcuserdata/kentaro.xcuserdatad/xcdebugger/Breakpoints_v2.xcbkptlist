@@ -31,8 +31,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "158">
+                  endingLineNumber = "78">
                </Location>
                <Location
                   uuid = "ABAB56E9-2012-4E76-8EC6-A70C53849BA7 - 85f5f40307b92b70"
@@ -46,10 +45,25 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "179">
+                  endingLineNumber = "79">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9096EF0A-E09E-4D17-9FC3-64A45D43A26B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "trip_liq/View/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "ContentView"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
