@@ -14,8 +14,8 @@
             filePath = "trip_liq/View/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "navigationArea"
             landmarkType = "24">
             <Locations>
@@ -60,10 +60,10 @@
             filePath = "trip_liq/View/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "ContentView"
-            landmarkType = "21">
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "messageArea"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

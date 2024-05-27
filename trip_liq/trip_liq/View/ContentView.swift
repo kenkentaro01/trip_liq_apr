@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var showSheet = false
 //    @StateObject var nameItem = NameItem(addName: "") 
-    @EnvironmentObject var vm:  NameItem
+    @EnvironmentObject var vm:  UserData
     
     var body: some View {
     ZStack{
@@ -21,12 +21,12 @@ struct ContentView: View {
 //            アイコンエリア
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(vm.MemberNameList, id: \.self) { name in
+                    ForEach(vm.MemberNameList) { user in
                         Circle()
                             .frame(width: 80, height: 80)
-                            .foregroundColor(.gray.opacity(0.5))
+                            .foregroundColor(user.color)
                             .overlay(
-                                Text(String(name.user.prefix(1)))
+                                Text(String(user.name.prefix(1)))
                                     .font(.title)
                                     .foregroundColor(.black)
                                     .bold()
@@ -45,8 +45,15 @@ struct ContentView: View {
     }
 
 
-#Preview {
-    ContentView()
+//#Preview {
+//    ContentView()
+//}
+// プレビューの設定
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(UserData())  //プレビューに環境オブジェクトを設定
+    }
 }
 
 extension ContentView{
@@ -99,7 +106,7 @@ extension ContentView{
             Spacer()
             HStack(spacing: 16) {
                 // 旅行する人の追加ボタン
-//                AddmemberAlertView()
+                AddmemberAlertView()
 
                 // 共有ボタン
                 Button(action: {
