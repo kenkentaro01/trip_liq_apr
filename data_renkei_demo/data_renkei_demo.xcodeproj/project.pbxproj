@@ -11,6 +11,8 @@
 		961C50632C0384B1008F429D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C50622C0384B1008F429D /* ContentView.swift */; };
 		961C50652C0384B4008F429D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961C50642C0384B4008F429D /* Assets.xcassets */; };
 		961C50682C0384B4008F429D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961C50672C0384B4008F429D /* Preview Assets.xcassets */; };
+		961C506F2C038866008F429D /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C506E2C038866008F429D /* viewModel.swift */; };
+		969880602C047E81007B9845 /* add_Namelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9698805F2C047E81007B9845 /* add_Namelist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		961C50622C0384B1008F429D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		961C50642C0384B4008F429D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		961C50672C0384B4008F429D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		961C506E2C038866008F429D /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
+		9698805F2C047E81007B9845 /* add_Namelist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = add_Namelist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				961C50602C0384B1008F429D /* data_renkei_demoApp.swift */,
 				961C50622C0384B1008F429D /* ContentView.swift */,
+				9698805E2C047E64007B9845 /* Func */,
+				9698805D2C047E48007B9845 /* Model */,
 				961C50642C0384B4008F429D /* Assets.xcassets */,
 				961C50662C0384B4008F429D /* Preview Content */,
 			);
@@ -65,6 +71,22 @@
 				961C50672C0384B4008F429D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9698805D2C047E48007B9845 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				961C506E2C038866008F429D /* viewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9698805E2C047E64007B9845 /* Func */ = {
+			isa = PBXGroup;
+			children = (
+				9698805F2C047E81007B9845 /* add_Namelist.swift */,
+			);
+			path = Func;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				961C50632C0384B1008F429D /* ContentView.swift in Sources */,
+				961C506F2C038866008F429D /* viewModel.swift in Sources */,
+				969880602C047E81007B9845 /* add_Namelist.swift in Sources */,
 				961C50612C0384B1008F429D /* data_renkei_demoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
