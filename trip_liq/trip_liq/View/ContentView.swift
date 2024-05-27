@@ -16,7 +16,7 @@ struct ContentView: View {
     ZStack{
         VStack(spacing: 0) {
             // navigationAreaをVStackの一部として配置
-//            navigationArea
+            navigationArea
             // 水平方向のスクロールビュー
 //            アイコンエリア
             ScrollView(.horizontal, showsIndicators: false) {
