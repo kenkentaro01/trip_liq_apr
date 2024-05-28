@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "886337A4-6769-4E71-9923-283F1B4AD907"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ABAB56E9-2012-4E76-8EC6-A70C53849BA7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "trip_liq/View/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "navigationArea"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "ABAB56E9-2012-4E76-8EC6-A70C53849BA7 - 299ef3d74ce24dcd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trip_liq.ContentView.navigationArea.getter : some"
+                  moduleName = "trip_liq"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kentaro/Desktop/iOS%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/trip_liq_apr/trip_liq/trip_liq/View/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78">
+               </Location>
+               <Location
+                  uuid = "ABAB56E9-2012-4E76-8EC6-A70C53849BA7 - 85f5f40307b92b70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.font(Swift.Optional&lt;SwiftUI.Font&gt;) -&gt; some&gt;&gt;.0)&gt; in trip_liq.ContentView.navigationArea.getter : some"
+                  moduleName = "trip_liq"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kentaro/Desktop/iOS%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA/trip_liq_apr/trip_liq/trip_liq/View/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9096EF0A-E09E-4D17-9FC3-64A45D43A26B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "trip_liq/View/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "ContentView"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

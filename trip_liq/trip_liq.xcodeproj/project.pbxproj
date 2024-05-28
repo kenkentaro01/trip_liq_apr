@@ -7,24 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960EC7422BC6FE3C002F4BEC /* AddmemberAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC7412BC6FE3C002F4BEC /* AddmemberAlertView.swift */; };
+		9620CE0C2BE8823C008F5763 /* tripMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9620CE0B2BE8823C008F5763 /* tripMember.swift */; };
 		965F190B2B7A79D4007E53C7 /* trip_liqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */; };
 		965F190D2B7A79D4007E53C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F190C2B7A79D4007E53C7 /* ContentView.swift */; };
 		965F190F2B7A79D7007E53C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F190E2B7A79D7007E53C7 /* Assets.xcassets */; };
 		965F19122B7A79D7007E53C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F19112B7A79D7007E53C7 /* Preview Assets.xcassets */; };
 		965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F19182B7A80C7007E53C7 /* TripMemberName.swift */; };
-		965F191B2B7BCEB6007E53C7 /* KanjoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F191A2B7BCEB6007E53C7 /* KanjoView.swift */; };
 		965F191D2B7D0255007E53C7 /* TripMemberNameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */; };
+		965F19232B8248D5007E53C7 /* Kanjo_keisan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */; };
+		967133472BC586440062362D /* CulculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967133462BC586440062362D /* CulculateView.swift */; };
+		967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */; };
+		9671334B2BC58D1D0062362D /* rireki_inputAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		960EC7412BC6FE3C002F4BEC /* AddmemberAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddmemberAlertView.swift; sourceTree = "<group>"; };
+		9620CE0B2BE8823C008F5763 /* tripMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tripMember.swift; sourceTree = "<group>"; };
 		965F19072B7A79D4007E53C7 /* trip_liq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trip_liq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trip_liqApp.swift; sourceTree = "<group>"; };
 		965F190C2B7A79D4007E53C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		965F190E2B7A79D7007E53C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		965F19112B7A79D7007E53C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		965F19182B7A80C7007E53C7 /* TripMemberName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMemberName.swift; sourceTree = "<group>"; };
-		965F191A2B7BCEB6007E53C7 /* KanjoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjoView.swift; sourceTree = "<group>"; };
 		965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMemberNameList.swift; sourceTree = "<group>"; };
+		965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanjo_keisan.swift; sourceTree = "<group>"; };
+		967133462BC586440062362D /* CulculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulculateView.swift; sourceTree = "<group>"; };
+		967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tatekae_inputAreaView.swift; sourceTree = "<group>"; };
+		9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rireki_inputAreaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9601ED612BC4482A00C5EC8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				965F190C2B7A79D4007E53C7 /* ContentView.swift */,
+				967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */,
+				9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */,
+				965F19182B7A80C7007E53C7 /* TripMemberName.swift */,
+				967133462BC586440062362D /* CulculateView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		960EC7402BC6FD41002F4BEC /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				960EC7412BC6FE3C002F4BEC /* AddmemberAlertView.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
 		965F18FE2B7A79D4007E53C7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */,
-				965F190C2B7A79D4007E53C7 /* ContentView.swift */,
-				965F19182B7A80C7007E53C7 /* TripMemberName.swift */,
+				96FFDB4F2BCAF5BA00EDEAF9 /* Models */,
+				9601ED612BC4482A00C5EC8A /* View */,
+				960EC7402BC6FD41002F4BEC /* AlertView */,
 				965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */,
-				965F191A2B7BCEB6007E53C7 /* KanjoView.swift */,
+				965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */,
 				965F190E2B7A79D7007E53C7 /* Assets.xcassets */,
 				965F19102B7A79D7007E53C7 /* Preview Content */,
 			);
@@ -74,6 +105,14 @@
 				965F19112B7A79D7007E53C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96FFDB4F2BCAF5BA00EDEAF9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9620CE0B2BE8823C008F5763 /* tripMember.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				965F191B2B7BCEB6007E53C7 /* KanjoView.swift in Sources */,
+				967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */,
 				965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */,
+				9620CE0C2BE8823C008F5763 /* tripMember.swift in Sources */,
+				965F19232B8248D5007E53C7 /* Kanjo_keisan.swift in Sources */,
+				960EC7422BC6FE3C002F4BEC /* AddmemberAlertView.swift in Sources */,
 				965F190D2B7A79D4007E53C7 /* ContentView.swift in Sources */,
+				967133472BC586440062362D /* CulculateView.swift in Sources */,
 				965F190B2B7A79D4007E53C7 /* trip_liqApp.swift in Sources */,
+				9671334B2BC58D1D0062362D /* rireki_inputAreaView.swift in Sources */,
 				965F191D2B7D0255007E53C7 /* TripMemberNameList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

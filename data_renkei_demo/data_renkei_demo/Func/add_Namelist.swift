@@ -1,8 +1,8 @@
 //
-//  TripMemberNameList.swift
-//  trip_liq
+//  add_Namelist.swift
+//  data_renkei_demo
 //
-//  Created by 健太郎 on 2024/02/14.
+//  Created by 健太郎 on 2024/05/27.
 //
 
 import Foundation
@@ -22,7 +22,6 @@ class UserData: ObservableObject {
     
     private func randomColor() -> Color {
         let colors: [Color] = [.red, .blue, .green, .yellow, .purple, .orange, .pink, .teal, .indigo, .cyan]
-//colorsに値が入っていない場合は強制的に黒色になる。
         return colors.randomElement() ?? .black
     }
 }
