@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @State var showSheet = false
-//    @StateObject var nameItem = NameItem(addName: "") 
     @EnvironmentObject var vm:  UserData
     
     var body: some View {
@@ -23,7 +22,7 @@ struct ContentView: View {
                 HStack {
                     ForEach(vm.MemberNameList) { user in
                         Circle()
-                            .frame(width: 80, height: 80)
+                            .frame(width: 60, height: 60)
                             .foregroundColor(user.color)
                             .overlay(
                                 Text(String(user.name.prefix(1)))
@@ -31,11 +30,12 @@ struct ContentView: View {
                                     .foregroundColor(.black)
                                     .bold()
                             )
+                            .padding()
                     }
                 }
             }
             // inputAreaをさらに下に配置
-//            inputArea
+            inputArea
         }
 //        AddmemberAlertView(nameItem: nameItem)
  // 画面の下部中央に配置
@@ -45,16 +45,12 @@ struct ContentView: View {
     }
 
 
-//#Preview {
-//    ContentView()
-//}
-// プレビューの設定
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .environmentObject(UserData())  //プレビューに環境オブジェクトを設定
-    }
+#Preview {
+    ContentView()
+    //プレビューに環境オブジェクトを設定
+        .environmentObject(UserData())
 }
+
 
 extension ContentView{
     //    private : アクセス修飾子

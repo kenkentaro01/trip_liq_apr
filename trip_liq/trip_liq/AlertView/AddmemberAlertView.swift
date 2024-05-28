@@ -33,14 +33,9 @@ struct AddmemberAlertView: View {
     }
 }
 
-//#Preview {
-//    AddmemberAlertView()
-//}
-
-// プレビューの設定
-struct AddmemberAlertView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddmemberAlertView()
-            .environmentObject(UserData())  //プレビューに環境オブジェクトを設定
-    }
+#Preview {
+    AddmemberAlertView()
+    //プレビューに環境オブジェクトを設定
+        .environmentObject(UserData())
 }
+
