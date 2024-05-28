@@ -7,38 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		960EC7422BC6FE3C002F4BEC /* AddmemberAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC7412BC6FE3C002F4BEC /* AddmemberAlertView.swift */; };
-		9620CE0C2BE8823C008F5763 /* tripMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9620CE0B2BE8823C008F5763 /* tripMember.swift */; };
-		965F190B2B7A79D4007E53C7 /* trip_liqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */; };
-		965F190D2B7A79D4007E53C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F190C2B7A79D4007E53C7 /* ContentView.swift */; };
-		965F190F2B7A79D7007E53C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F190E2B7A79D7007E53C7 /* Assets.xcassets */; };
-		965F19122B7A79D7007E53C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F19112B7A79D7007E53C7 /* Preview Assets.xcassets */; };
-		965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F19182B7A80C7007E53C7 /* TripMemberName.swift */; };
-		965F191D2B7D0255007E53C7 /* TripMemberNameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */; };
-		965F19232B8248D5007E53C7 /* Kanjo_keisan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */; };
-		967133472BC586440062362D /* CulculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967133462BC586440062362D /* CulculateView.swift */; };
-		967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */; };
-		9671334B2BC58D1D0062362D /* rireki_inputAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */; };
+		961C50612C0384B1008F429D /* data_renkei_demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C50602C0384B1008F429D /* data_renkei_demoApp.swift */; };
+		961C50632C0384B1008F429D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C50622C0384B1008F429D /* ContentView.swift */; };
+		961C50652C0384B4008F429D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961C50642C0384B4008F429D /* Assets.xcassets */; };
+		961C50682C0384B4008F429D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961C50672C0384B4008F429D /* Preview Assets.xcassets */; };
+		961C506F2C038866008F429D /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C506E2C038866008F429D /* viewModel.swift */; };
+		969880602C047E81007B9845 /* add_Namelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9698805F2C047E81007B9845 /* add_Namelist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		960EC7412BC6FE3C002F4BEC /* AddmemberAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddmemberAlertView.swift; sourceTree = "<group>"; };
-		9620CE0B2BE8823C008F5763 /* tripMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tripMember.swift; sourceTree = "<group>"; };
-		965F19072B7A79D4007E53C7 /* trip_liq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trip_liq.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trip_liqApp.swift; sourceTree = "<group>"; };
-		965F190C2B7A79D4007E53C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		965F190E2B7A79D7007E53C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		965F19112B7A79D7007E53C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		965F19182B7A80C7007E53C7 /* TripMemberName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMemberName.swift; sourceTree = "<group>"; };
-		965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMemberNameList.swift; sourceTree = "<group>"; };
-		965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanjo_keisan.swift; sourceTree = "<group>"; };
-		967133462BC586440062362D /* CulculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulculateView.swift; sourceTree = "<group>"; };
-		967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tatekae_inputAreaView.swift; sourceTree = "<group>"; };
-		9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rireki_inputAreaView.swift; sourceTree = "<group>"; };
+		961C505D2C0384B1008F429D /* data_renkei_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = data_renkei_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		961C50602C0384B1008F429D /* data_renkei_demoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data_renkei_demoApp.swift; sourceTree = "<group>"; };
+		961C50622C0384B1008F429D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		961C50642C0384B4008F429D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		961C50672C0384B4008F429D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		961C506E2C038866008F429D /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
+		9698805F2C047E81007B9845 /* add_Namelist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = add_Namelist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		965F19042B7A79D4007E53C7 /* Frameworks */ = {
+		961C505A2C0384B1008F429D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,109 +36,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9601ED612BC4482A00C5EC8A /* View */ = {
+		961C50542C0384B1008F429D = {
 			isa = PBXGroup;
 			children = (
-				965F190C2B7A79D4007E53C7 /* ContentView.swift */,
-				967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */,
-				9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */,
-				965F19182B7A80C7007E53C7 /* TripMemberName.swift */,
-				967133462BC586440062362D /* CulculateView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		960EC7402BC6FD41002F4BEC /* AlertView */ = {
-			isa = PBXGroup;
-			children = (
-				960EC7412BC6FE3C002F4BEC /* AddmemberAlertView.swift */,
-			);
-			path = AlertView;
-			sourceTree = "<group>";
-		};
-		965F18FE2B7A79D4007E53C7 = {
-			isa = PBXGroup;
-			children = (
-				965F19092B7A79D4007E53C7 /* trip_liq */,
-				965F19082B7A79D4007E53C7 /* Products */,
+				961C505F2C0384B1008F429D /* data_renkei_demo */,
+				961C505E2C0384B1008F429D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		965F19082B7A79D4007E53C7 /* Products */ = {
+		961C505E2C0384B1008F429D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				965F19072B7A79D4007E53C7 /* trip_liq.app */,
+				961C505D2C0384B1008F429D /* data_renkei_demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		965F19092B7A79D4007E53C7 /* trip_liq */ = {
+		961C505F2C0384B1008F429D /* data_renkei_demo */ = {
 			isa = PBXGroup;
 			children = (
-				965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */,
-				96FFDB4F2BCAF5BA00EDEAF9 /* Models */,
-				9601ED612BC4482A00C5EC8A /* View */,
-				960EC7402BC6FD41002F4BEC /* AlertView */,
-				965F191C2B7D0254007E53C7 /* TripMemberNameList.swift */,
-				965F19222B8248D5007E53C7 /* Kanjo_keisan.swift */,
-				965F190E2B7A79D7007E53C7 /* Assets.xcassets */,
-				965F19102B7A79D7007E53C7 /* Preview Content */,
+				961C50602C0384B1008F429D /* data_renkei_demoApp.swift */,
+				961C50622C0384B1008F429D /* ContentView.swift */,
+				9698805E2C047E64007B9845 /* Func */,
+				9698805D2C047E48007B9845 /* Model */,
+				961C50642C0384B4008F429D /* Assets.xcassets */,
+				961C50662C0384B4008F429D /* Preview Content */,
 			);
-			path = trip_liq;
+			path = data_renkei_demo;
 			sourceTree = "<group>";
 		};
-		965F19102B7A79D7007E53C7 /* Preview Content */ = {
+		961C50662C0384B4008F429D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				965F19112B7A79D7007E53C7 /* Preview Assets.xcassets */,
+				961C50672C0384B4008F429D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		96FFDB4F2BCAF5BA00EDEAF9 /* Models */ = {
+		9698805D2C047E48007B9845 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9620CE0B2BE8823C008F5763 /* tripMember.swift */,
+				961C506E2C038866008F429D /* viewModel.swift */,
 			);
-			path = Models;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9698805E2C047E64007B9845 /* Func */ = {
+			isa = PBXGroup;
+			children = (
+				9698805F2C047E81007B9845 /* add_Namelist.swift */,
+			);
+			path = Func;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		965F19062B7A79D4007E53C7 /* trip_liq */ = {
+		961C505C2C0384B1008F429D /* data_renkei_demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 965F19152B7A79D7007E53C7 /* Build configuration list for PBXNativeTarget "trip_liq" */;
+			buildConfigurationList = 961C506B2C0384B4008F429D /* Build configuration list for PBXNativeTarget "data_renkei_demo" */;
 			buildPhases = (
-				965F19032B7A79D4007E53C7 /* Sources */,
-				965F19042B7A79D4007E53C7 /* Frameworks */,
-				965F19052B7A79D4007E53C7 /* Resources */,
+				961C50592C0384B1008F429D /* Sources */,
+				961C505A2C0384B1008F429D /* Frameworks */,
+				961C505B2C0384B1008F429D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = trip_liq;
-			productName = trip_liq;
-			productReference = 965F19072B7A79D4007E53C7 /* trip_liq.app */;
+			name = data_renkei_demo;
+			productName = data_renkei_demo;
+			productReference = 961C505D2C0384B1008F429D /* data_renkei_demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		965F18FF2B7A79D4007E53C7 /* Project object */ = {
+		961C50552C0384B1008F429D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					965F19062B7A79D4007E53C7 = {
-						CreatedOnToolsVersion = 15.2;
+					961C505C2C0384B1008F429D = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 965F19022B7A79D4007E53C7 /* Build configuration list for PBXProject "trip_liq" */;
+			buildConfigurationList = 961C50582C0384B1008F429D /* Build configuration list for PBXProject "data_renkei_demo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -158,50 +132,44 @@
 				en,
 				Base,
 			);
-			mainGroup = 965F18FE2B7A79D4007E53C7;
-			productRefGroup = 965F19082B7A79D4007E53C7 /* Products */;
+			mainGroup = 961C50542C0384B1008F429D;
+			productRefGroup = 961C505E2C0384B1008F429D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				965F19062B7A79D4007E53C7 /* trip_liq */,
+				961C505C2C0384B1008F429D /* data_renkei_demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		965F19052B7A79D4007E53C7 /* Resources */ = {
+		961C505B2C0384B1008F429D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				965F19122B7A79D7007E53C7 /* Preview Assets.xcassets in Resources */,
-				965F190F2B7A79D7007E53C7 /* Assets.xcassets in Resources */,
+				961C50682C0384B4008F429D /* Preview Assets.xcassets in Resources */,
+				961C50652C0384B4008F429D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		965F19032B7A79D4007E53C7 /* Sources */ = {
+		961C50592C0384B1008F429D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */,
-				965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */,
-				9620CE0C2BE8823C008F5763 /* tripMember.swift in Sources */,
-				965F19232B8248D5007E53C7 /* Kanjo_keisan.swift in Sources */,
-				960EC7422BC6FE3C002F4BEC /* AddmemberAlertView.swift in Sources */,
-				965F190D2B7A79D4007E53C7 /* ContentView.swift in Sources */,
-				967133472BC586440062362D /* CulculateView.swift in Sources */,
-				965F190B2B7A79D4007E53C7 /* trip_liqApp.swift in Sources */,
-				9671334B2BC58D1D0062362D /* rireki_inputAreaView.swift in Sources */,
-				965F191D2B7D0255007E53C7 /* TripMemberNameList.swift in Sources */,
+				961C50632C0384B1008F429D /* ContentView.swift in Sources */,
+				961C506F2C038866008F429D /* viewModel.swift in Sources */,
+				969880602C047E81007B9845 /* add_Namelist.swift in Sources */,
+				961C50612C0384B1008F429D /* data_renkei_demoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		965F19132B7A79D7007E53C7 /* Debug */ = {
+		961C50692C0384B4008F429D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -264,7 +232,7 @@
 			};
 			name = Debug;
 		};
-		965F19142B7A79D7007E53C7 /* Release */ = {
+		961C506A2C0384B4008F429D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -310,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -320,14 +288,14 @@
 			};
 			name = Release;
 		};
-		965F19162B7A79D7007E53C7 /* Debug */ = {
+		961C506C2C0384B4008F429D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"trip_liq/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"data_renkei_demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 24JKPA5A64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -341,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kentaro-nagata.trip-liq";
+				PRODUCT_BUNDLE_IDENTIFIER = "kentaro-nagata.data-renkei-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -349,14 +317,14 @@
 			};
 			name = Debug;
 		};
-		965F19172B7A79D7007E53C7 /* Release */ = {
+		961C506D2C0384B4008F429D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"trip_liq/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"data_renkei_demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 24JKPA5A64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -370,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kentaro-nagata.trip-liq";
+				PRODUCT_BUNDLE_IDENTIFIER = "kentaro-nagata.data-renkei-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -381,25 +349,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		965F19022B7A79D4007E53C7 /* Build configuration list for PBXProject "trip_liq" */ = {
+		961C50582C0384B1008F429D /* Build configuration list for PBXProject "data_renkei_demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				965F19132B7A79D7007E53C7 /* Debug */,
-				965F19142B7A79D7007E53C7 /* Release */,
+				961C50692C0384B4008F429D /* Debug */,
+				961C506A2C0384B4008F429D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		965F19152B7A79D7007E53C7 /* Build configuration list for PBXNativeTarget "trip_liq" */ = {
+		961C506B2C0384B4008F429D /* Build configuration list for PBXNativeTarget "data_renkei_demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				965F19162B7A79D7007E53C7 /* Debug */,
-				965F19172B7A79D7007E53C7 /* Release */,
+				961C506C2C0384B4008F429D /* Debug */,
+				961C506D2C0384B4008F429D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 965F18FF2B7A79D4007E53C7 /* Project object */;
+	rootObject = 961C50552C0384B1008F429D /* Project object */;
 }
