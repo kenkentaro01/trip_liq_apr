@@ -17,7 +17,10 @@ struct Tatekae_inputAreaView: View {
                 ForEach(0..<vm.MemberNameList.count, id: \.self) { i in
                     // 内側のForEach
                     ForEach(0..<vm.MemberNameList.count, id: \.self) { j in
-                        if i != j {  // 同じ人同士のペアを排除する
+                        if vm.MemberNameList.count == 1{
+                            Text("もう一人追加してください。")
+                        }
+                        else if i != j {  // 同じ人同士のペアを排除する
                             Rectangle()
                                 .frame(width: 380, height: 100)
                                 .cornerRadius(20)
