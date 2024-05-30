@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		960EC7422BC6FE3C002F4BEC /* AddmemberAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EC7412BC6FE3C002F4BEC /* AddmemberAlertView.swift */; };
 		9620CE0C2BE8823C008F5763 /* tripMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9620CE0B2BE8823C008F5763 /* tripMember.swift */; };
+		964684802C08546500433CF9 /* Practice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646847F2C08546500433CF9 /* Practice.swift */; };
 		965F190B2B7A79D4007E53C7 /* trip_liqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */; };
 		965F190D2B7A79D4007E53C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F190C2B7A79D4007E53C7 /* ContentView.swift */; };
 		965F190F2B7A79D7007E53C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F190E2B7A79D7007E53C7 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		960EC7412BC6FE3C002F4BEC /* AddmemberAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddmemberAlertView.swift; sourceTree = "<group>"; };
 		9620CE0B2BE8823C008F5763 /* tripMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tripMember.swift; sourceTree = "<group>"; };
+		9646847F2C08546500433CF9 /* Practice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice.swift; sourceTree = "<group>"; };
 		965F19072B7A79D4007E53C7 /* trip_liq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trip_liq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965F190A2B7A79D4007E53C7 /* trip_liqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trip_liqApp.swift; sourceTree = "<group>"; };
 		965F190C2B7A79D4007E53C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				965F190C2B7A79D4007E53C7 /* ContentView.swift */,
+				9646847F2C08546500433CF9 /* Practice.swift */,
 				967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */,
 				9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */,
 				965F19182B7A80C7007E53C7 /* TripMemberName.swift */,
@@ -187,6 +190,7 @@
 			files = (
 				967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */,
 				965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */,
+				964684802C08546500433CF9 /* Practice.swift in Sources */,
 				9620CE0C2BE8823C008F5763 /* tripMember.swift in Sources */,
 				965F19232B8248D5007E53C7 /* Kanjo_keisan.swift in Sources */,
 				960EC7422BC6FE3C002F4BEC /* AddmemberAlertView.swift in Sources */,
