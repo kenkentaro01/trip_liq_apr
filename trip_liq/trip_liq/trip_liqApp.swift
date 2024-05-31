@@ -12,6 +12,7 @@ struct trip_liqApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(UserData())
         }
     }
 }

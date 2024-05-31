@@ -20,6 +20,7 @@
 		967133472BC586440062362D /* CulculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967133462BC586440062362D /* CulculateView.swift */; };
 		967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */; };
 		9671334B2BC58D1D0062362D /* rireki_inputAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */; };
+		96B72E3E2C0990520026D3AA /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B72E3D2C0990520026D3AA /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		967133462BC586440062362D /* CulculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulculateView.swift; sourceTree = "<group>"; };
 		967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tatekae_inputAreaView.swift; sourceTree = "<group>"; };
 		9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rireki_inputAreaView.swift; sourceTree = "<group>"; };
+		96B72E3D2C0990520026D3AA /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */,
 				965F19182B7A80C7007E53C7 /* TripMemberName.swift */,
 				967133462BC586440062362D /* CulculateView.swift */,
+				96B72E3D2C0990520026D3AA /* SwiftUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			files = (
 				967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */,
 				965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */,
+				96B72E3E2C0990520026D3AA /* SwiftUIView.swift in Sources */,
 				964684802C08546500433CF9 /* Practice.swift in Sources */,
 				9620CE0C2BE8823C008F5763 /* tripMember.swift in Sources */,
 				965F19232B8248D5007E53C7 /* Kanjo_keisan.swift in Sources */,
