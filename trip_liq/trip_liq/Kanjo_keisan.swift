@@ -5,7 +5,7 @@
 //  Created by 健太郎 on 2024/02/18.
 //
 
-//import Foundation
+import Foundation
 //
 //struct SeisanItem {
 //    let id = UUID()

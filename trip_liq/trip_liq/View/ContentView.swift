@@ -150,7 +150,7 @@ extension ContentView{
              // ここにシートとして表示したい内容を配置
              CulculateView() // 別のビューをシートとして表示
                  .ignoresSafeArea()
-                 .presentationDetents([.medium, .large])
+                 .presentationDetents([.large])
          }
      }
     }

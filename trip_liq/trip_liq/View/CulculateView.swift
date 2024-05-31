@@ -14,12 +14,13 @@ struct CulculateView: View {
     ]
     
     @State private var selectedValue: Set<preUserName> = []
-    @State private var singleselectedValue: preUserName?
+    @State private var singleselectedValue: preUserName? = nil
     @State private var selectedTab: String = "均等"
     @State var money: Int? = nil
     @State private var detailtext: String = ""
     @State private var individualMoney: [UUID: Int] = [:] // 個別の金額を管理する辞書
-
+    @State var AlertshowSheet = false
+    
     var body: some View {
         VStack(spacing: 16) {
             selectMemberNameList
@@ -57,8 +58,14 @@ struct CulculateView: View {
                     Text("金額")
                         .font(.system(size: 24))
                         .bold()
-                    Text("さんに支払う金額を記入してください")
-                        .font(.system(size: 18))
+                        .offset(x:0,y:0)
+                    if let selectedMember = singleselectedValue {
+                           Text("\(selectedMember.name)さんに支払う金額を記入してください")
+                               .font(.system(size: 18))
+                       } else {
+                           Text("支払う人を選択してください")
+                               .font(.system(size: 18))
+                       }
                     ForEach(Array(selectedValue), id: \.id) { person in
                         HStack {
                             Circle()
@@ -120,10 +127,22 @@ struct CulculateView: View {
                 .padding(.trailing, 10)
                 
                 Button(action: {
-                    print("入力しました。")
-                    print(selectedValue.count)
-                    print(selectedValue)
-                    print(individualMoney) // 個別の金額を表示
+                    if selectedTab == "均等" {
+                        if selectedValue.isEmpty || singleselectedValue == nil {
+                            AlertshowSheet = true
+                        } else {
+                            print("均等に支払いました。")
+                            for name in selectedValue {
+                                print(name.name)
+                            }
+                            if let payer = singleselectedValue {
+                                print(payer.name)
+                            }
+                        }
+                    } else {
+                        print("均等以外入力しました。")
+                        print(individualMoney) // 個別の金額を表示
+                    }
                 }) {
                     Text("入力")
                         .frame(width: 100, height: 40)
@@ -132,6 +151,11 @@ struct CulculateView: View {
                         .cornerRadius(10)
                 }
                 .buttonStyle(PlainButtonStyle())
+                .alert("旅人", isPresented: $AlertshowSheet) {
+                    Button("戻る", role: .cancel) {}
+                } message: {
+                    Text("支払う人と奢られた人を選択してください")
+                }
             }
             .padding()
         }
@@ -139,6 +163,7 @@ struct CulculateView: View {
         .background(Color(.systemGroupedBackground))
     }
 }
+
 
 extension CulculateView {
     private var selectMemberNameList: some View {
@@ -158,7 +183,7 @@ extension CulculateView {
                 Text("奢り手")
                     .font(.headline)
                     .padding(.bottom, 5)
-                List {
+                List(selection: $singleselectedValue) {
                     ForEach(MemberNameList, id: \.self) { person in
                         Text("\(person.name)")
                     }

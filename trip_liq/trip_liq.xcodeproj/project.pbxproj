@@ -21,6 +21,8 @@
 		967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */; };
 		9671334B2BC58D1D0062362D /* rireki_inputAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */; };
 		96B72E3E2C0990520026D3AA /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B72E3D2C0990520026D3AA /* SwiftUIView.swift */; };
+		96B72E402C09FD5D0026D3AA /* seisanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B72E3F2C09FD5D0026D3AA /* seisanModel.swift */; };
+		96B72E422C0A22CA0026D3AA /* sumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B72E412C0A22CA0026D3AA /* sumData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		967133482BC58D0A0062362D /* Tatekae_inputAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tatekae_inputAreaView.swift; sourceTree = "<group>"; };
 		9671334A2BC58D1D0062362D /* rireki_inputAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rireki_inputAreaView.swift; sourceTree = "<group>"; };
 		96B72E3D2C0990520026D3AA /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		96B72E3F2C09FD5D0026D3AA /* seisanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seisanModel.swift; sourceTree = "<group>"; };
+		96B72E412C0A22CA0026D3AA /* sumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sumData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				9620CE0B2BE8823C008F5763 /* tripMember.swift */,
+				96B72E3F2C09FD5D0026D3AA /* seisanModel.swift */,
+				96B72E412C0A22CA0026D3AA /* sumData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B72E402C09FD5D0026D3AA /* seisanModel.swift in Sources */,
 				967133492BC58D0A0062362D /* Tatekae_inputAreaView.swift in Sources */,
 				965F19192B7A80C7007E53C7 /* TripMemberName.swift in Sources */,
 				96B72E3E2C0990520026D3AA /* SwiftUIView.swift in Sources */,
@@ -203,6 +210,7 @@
 				965F190B2B7A79D4007E53C7 /* trip_liqApp.swift in Sources */,
 				9671334B2BC58D1D0062362D /* rireki_inputAreaView.swift in Sources */,
 				965F191D2B7D0255007E53C7 /* TripMemberNameList.swift in Sources */,
+				96B72E422C0A22CA0026D3AA /* sumData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
